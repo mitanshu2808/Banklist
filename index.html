@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bankist-A Minimalistic Bank</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/icon 2.png" type="image/x-icon" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@14.0.0"></script>
+    <script src="script.js" type="module"></script>
+    <script src="Bankist/script.js" type="module"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </head>
+  <body>
+    <div class="loader-container">
+      <div class="loader">
+        <svg>
+          <text x="50%" y="50%" text-anchor="middle">Bankist</text>
+        </svg>
+      </div>
+    </div>
+    <div class="main">
+      <nav class="landing-nav">
+        <img src="img/logo.png" alt="" />
+        <div class="hamMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+          <li>
+            <a href="#features" class="features-nav nav-link">Features</a>
+          </li>
+          <li>
+            <a href="#operations" class="operations-nav nav-link">Operations</a>
+          </li>
+          <li>
+            <a href="#testimonials" class="testimonials-nav nav-link"
+              >Testimonials</a
+            >
+          </li>
+          <button class="open-acc-btn">Login</button>
+        </ul>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#features" class="features-nav nav-link">Features</a>
+            </li>
+            <li>
+              <a href="#operations" class="operations-nav nav-link"
+                >Operations</a
+              >
+            </li>
+            <li>
+              <a href="#testimonials" class="testimonials-nav nav-link"
+                >Testimonials</a
+              >
+            </li>
+            <button class="open-acc-btn nav-link">Login</button>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero">
+        <div>
+          <h1>When <span>banking</span> meets <br /><span>minimalist</span></h1>
+          <p class="sub-heading1">
+            A simpler banking experience for a simpler life.
+          </p>
+          <a href="" class="sub-heading2">Learn more <span>↓</span></a>
+        </div>
+        <img src="img/1705565066872.png" alt="" />
+      </div>
+      <hr color="gray" />
+      <div class="features section-hidden" id="features">
+        <p>FEATURES</p>
+        <h1>Everything you need in a modern bank and more.</h1>
+        <div class="section1 section">
+          <img
+            src="img/digital-lazy.jpg"
+            class="lazy-img"
+            data-src="img/digital.jpg"
+            alt=""
+          />
+          <div>
+            <span><img src="icons8-laptop-48.png" alt="" /></span>
+            <h2>100% Digital Bank</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet
+              atque libero earum error vel beatae ipsam quam nemo unde! Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Iure, aperiam.
+            </p>
+          </div>
+        </div>
+        <div class="section2 section">
+          <div>
+            <span><img src="icons8-eye-48.png" alt="" /></span>
+            <h2>Keep an eye on your Money</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet
+              atque libero earum error vel beatae ipsam quam nemo unde! Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Iure, aperiam.
+            </p>
+          </div>
+          <img
+            src="img/grow-lazy.jpg"
+            class="lazy-img"
+            data-src="img/grow.jpg"
+            alt=""
+          />
+        </div>
+        <div class="section3 section">
+          <img
+            src="img/card-lazy.jpg"
+            class="lazy-img"
+            data-src="img/card.jpg"
+            alt=""
+          />
+          <div>
+            <span><img src="icons8-credit-card-48.png" alt="" /></span>
+            <h2>Free Debit Card included</h2>
+            <p>
+              Lorem ipsum dolor sit amet.ipsum dolor sit amet consectetur
+              adipisicing elit. Eius amet atque libero earum error vel beatae
+              ipsam quam nemo unde! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Iure, aperiam.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr color="gray" />
+      <div class="operations section-hidden" id="operations">
+        <p>OPERATIONS</p>
+        <h1>Everything as simple as possible.</h1>
+        <div class="outer">
+          <div class="buttons">
+            <button class="tabs operation-tab-active" data-tab="1">
+              <span>01</span> Instant Transfers
+            </button>
+            <button class="tabs" data-tab="2">
+              <span>02</span> Instant Loans
+            </button>
+            <button class="tabs" data-tab="3">
+              <span>03</span> Instant Closing
+            </button>
+          </div>
+          <div class="operation-content-1 operation-content active-content">
+            <span
+              ><svg
+                width="64px"
+                height="64px"
+                viewBox="-8.16 -8.16 40.32 40.32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M20 15V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18L4 15M8 11L12 15M12 15L16 11M12 15V3"
+                    stroke="#ffae52"
+                    stroke-width="0.696"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g></svg
+            ></span>
+            <div>
+              <p>Tranfser money to anyone, instantly! No fees, no BS.</p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
+                similique totam exercitationem doloribus aut, nam doloremque
+                culpa facere modi vel iste sed repudiandae ut! Debitis sunt
+                accusamus numquam porro! Placeat. Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Voluptatum odit ratione
+                voluptate, atque illo repudiandae.
+              </p>
+            </div>
+          </div>
+          <div class="operation-content-2 operation-content">
+            <span
+              ><svg
+                fill="#37cd49"
+                height="64px"
+                width="64px"
+                version="1.1"
+                id="_x31_"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="-44.8 -44.8 217.60 217.60"
+                xml:space="preserve"
+                stroke="#37cd49"
+                stroke-width="0.256"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <polygon
+                      points="22,31.6 22,35.3 115.9,35.3 115.9,82.7 119.5,82.7 119.5,31.6 "
+                    ></polygon>
+                    <polygon
+                      points="15.3,42 109.2,42 109.2,89.4 112.8,89.4 112.8,38.4 15.3,38.4 "
+                    ></polygon>
+                    <path
+                      d="M23.9,45.4H8.5v15.4V81v15.4h15.4h66.7H106V81V60.8V45.4H90.6H23.9z M102,60.2v21.2c-5.3,1.4-9.4,5.6-10.9,11H23.3 c-1.4-5.4-5.6-9.5-10.9-11V60.2c5.3-1.4,9.4-5.6,10.9-11h67.8C92.4,54.6,96.6,58.8,102,60.2z"
+                    ></path>
+                    <circle cx="57.2" cy="70.9" r="18"></circle>
+                  </g>
+                </g></svg
+            ></span>
+            <div>
+              <p>Loans at your fingrtips - Instant Loans</p>
+              <p>
+                Soluta similique totam exercitationem doloribus aut, nam
+                doloremque culpa facere modi vel iste sed repudiandae ut!
+                Debitis sunt accusamus numquam porro! Lorem ipsum dolor sit
+                amet. Placeat. Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Voluptatum odit ratione voluptate, atque illo
+                repudiandae.
+              </p>
+            </div>
+          </div>
+          <div class="operation-content-3 operation-content">
+            <span
+              ><svg
+                width="64px"
+                height="64px"
+                viewBox="-8.4 -8.4 40.80 40.80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5"
+                    stroke="#ff4242"
+                    stroke-width="0.768"
+                    stroke-linecap="round"
+                  ></path>
+                  <path
+                    d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7"
+                    stroke="#ff4242"
+                    stroke-width="0.768"
+                    stroke-linecap="round"
+                  ></path>
+                </g></svg
+            ></span>
+            <div>
+              <p>Don't need account? Close your account in just a minute!</p>
+              <p>
+                doloribus aut, nam doloremque culpa facere modi vel iste sed
+                repudiandae ut! Debitis sunt accusamus numquam porro! Placeat.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatum odit ratione voluptate, atque illo repudiandae. Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr color="gray" />
+      <div class="testimonials section-hidden" id="testimonials">
+        <p>NOT SURE YET?</p>
+        <p>Millions of Bankists are already making their lifes simpler.</p>
+        <div class="slider">
+          <div class="btn btn-left">←</div>
+          <div>
+            <div class="slide1 slide">
+              <p><span>" </span> Best financial decision ever!</p>
+              <blockquote>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                cupiditate quam sunt? Aliquid praesentium vero, rem incidunt
+                reprehenderit voluptatum rerum! Earum quis quaerat perspiciatis
+                quae similique nihil ad fugit vitae quo facere at voluptates
+                maiores, doloribus ducimus dolor, Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Sed repellat dolores modi.
+              </blockquote>
+              <address>
+                <img src="img/user-1.jpg" alt="" />
+                <div>
+                  <p>Alex</p>
+                  <p>London, USA</p>
+                </div>
+              </address>
+            </div>
+            <div class="slide2 slide">
+              <p><span>" </span> Really minimalist!</p>
+              <blockquote>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                cupiditate quam sunt? Aliquid praesentium vero, rem incidunt
+                reprehenderit voluptatum rerum! Earum quis quaerat perspiciatis
+                quae similique nihil ad fugit vitae quo facere at voluptates
+                maiores, doloribus ducimus dolor, molestias tempore Lorem ipsum,
+                dolor sit amet consectetur adipisicing elit.
+              </blockquote>
+              <address>
+                <img src="img/user-2.jpg" alt="" />
+                <div>
+                  <p>Olivia</p>
+                  <p>USA</p>
+                </div>
+              </address>
+            </div>
+            <div class="slide3 slide">
+              <p><span>" </span> Very light and easy!</p>
+              <blockquote>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                cupiditate quam sunt? Aliquid praesentium vero, rem incidunt
+                reprehenderit voluptatum rerum! Earum quis quaerat perspiciatis
+                quae similique nihil ad fugit vitae quo facere at voluptates
+                maiores, doloribus ducimus dolor, molestias tempore modi
+                asperiores saepe voluptatum! Velit veritatis fugit nostrum hic
+                repellendus?
+              </blockquote>
+              <address>
+                <img src="img/user-3.jpg" alt="" />
+                <div>
+                  <p>Steven</p>
+                  <p>Australia</p>
+                </div>
+              </address>
+            </div>
+          </div>
+          <div class="btn btn-right">→</div>
+        </div>
+        <div class="dots">
+          <span class="active-dot"></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="section-hidden footer">
+        <div class="open-acc">
+          <p>
+            The best day to join Bankist was yesterday. <br />
+            The second best is today!
+          </p>
+          <button class="open-acc-btn last-btn">
+            Open your free account today!
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="banking-page hidden">
+      <div class="logout">
+        <p>
+          You will be logged out in <span class="timer">10 : 00</span> mins.
+        </p>
+        <div class="t"></div>
+      </div>
+      <nav class="banking-nav">
+        <p
+          style="
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+              'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+              'Helvetica Neue', sans-serif;
+            font-weight: 600;
+          "
+          class="welcome"
+        >
+          Welcome!
+        </p>
+        <img src="Bankist/logo.png" alt="" class="logo"
+        />
+        <button class="logout-btn">Logout</button>
+      </nav>
+      <div class="app">
+        <div class="test">
+          <p>
+            Current Balance
+            <span style="display: block"
+              >As of
+              <span style="color: rgba(0, 0, 0, 0.692)" class="date"
+                >01/05/2023</span
+              ></span
+            >
+          </p>
+          <span style="font-size: 3rem" class="Balance">
+            <span class="balance">0000</span></span
+          >
+        </div>
+        <div class="mainUI">
+          <div class="entries" id="entries"></div>
+          <div class="services">
+            <div class="transfer">
+              <div>
+                <p>Transfer money</p>
+                <form action="">
+                  <input type="text" class="transfer-to" />
+                  <input type="number" class="transfer-amount" />
+                  <button class="hit transfer-btn">
+                    <img src="icons8-right-arrow-50.png" alt="" />
+                  </button>
+                </form>
+                <p><span> Transfer To </span> <span> Amount</span></p>
+              </div>
+            </div>
+            <div class="loan">
+              <div>
+                <p>Request Money</p>
+                <form action="">
+                  <input type="number" class="request-amount" />
+                  <button class="hit request-btn">
+                    <img src="icons8-right-arrow-50.png" alt="" />
+                  </button>
+                </form>
+                <p style="font-size: 1.1rem">Amount</p>
+              </div>
+            </div>
+            <div class="close">
+              <div>
+                <p>Delete History</p>
+                <form action="">
+                  <input type="text" class="closeUser" />
+                  <input type="text" class="closePin" />
+                  <button class="hit close-btn">
+                    <img src="icons8-right-arrow-50.png" alt="" />
+                  </button>
+                </form>
+                <p><span>Your Username</span><span>Write YES</span></p>
+              </div>
+            </div>
+            <div class="status">
+              <p style="color: #4ec45d; font-weight: 500">
+                <span>In</span> <span class="in">1000 </span>
+              </p>
+              <p style="color: rgba(249, 54, 54, 0.864); font-weight: 500">
+                <span style="white-space: pre"> Out </span
+                ><span class="out">100</span>
+              </p>
+              <p
+                style="font-size: 1.1rem; margin-left: 0.8rem; cursor: pointer"
+                class="sort"
+              >
+                Sort↓
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr color="gray" />
+    <footer>
+      <ul>
+        <li>About</li>
+        <li>Pricing</li>
+        <li>Terms of Us</li>
+        <li>Privacy Policy</li>
+        <li>Blog</li>
+        <li>Contact Us</li>
+      </ul>
+      <img src="img/icon.png" alt="" />
+      <p>© Copyright by <span>Bankist</span></p>
+    </footer>
+    <div class="overlay hidden">
+      <div class="wrapper">
+        <span id="closeOverlay">×</span>
+        <form action="" class="register-form">
+          <p>Open your bank account in just <br /><span>5 minutes</span></p>
+          <div class="form">
+            <div>
+              <p>First Name</p>
+              <p>Username</p>
+              <p>Email Address</p>
+              <p>Password</p>
+            </div>
+            <div>
+              <input type="text" class="first" required /><br />
+              <input type="text" class="last" required /><br />
+              <input type="email" class="email" required /><br />
+              <input type="password" class="pass" required /><img
+                src="open-eye.png"
+                class="pass-eye"
+              />
+            </div>
+          </div>
+          <div class="terms">
+            <input type="checkbox" name="" id="checkbox" required />
+            <label for="checkbox"
+              >I have read and agree to the privacy policy of Bankist.</label
+            >
+            <span class="login-btn">Already have an account?</span>
+          </div>
+          <input type="submit" value="Register" class="submit" id="reg-btn" />
+        </form>
+        <form action="" class="login-form hidden">
+          <p>Login Your Account</p>
+          <div class="form">
+            <div>
+              <p>Email</p>
+              <p>Password</p>
+            </div>
+            <div>
+              <input type="text" class="email-log" required /><br />
+              <input type="password" class="pass-log" required /><img
+                src="open-eye.png"
+                class="pass-eye"
+              />
+            </div>
+          </div>
+          <p class="create">Don't have an account? <span>Create one!</span></p>
+          <p class="forget">Forgot your password?</p>
+          <button type="submit" class="submit" id="login">Login</button>
+        </form>
+        <form action="" class="auth-form hidden">
+          <p>Login account by OTP</p>
+          <div class="form">
+            <div>
+              <p>Email</p>
+              <p>OTP</p>
+            </div>
+            <div>
+            <input type="text" class="auth-mail" /><button class="otp">
+              Send</button
+            ><br />
+            <input type="text" class="auth-code" />
+          </div>
+        </div>
+          <button class="auth-btn">Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
